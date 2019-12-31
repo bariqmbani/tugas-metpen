@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Oswald|Source+Sans+Pro&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	/* font-family: 'Lato', sans-serif; */
+	/* font-family: 'Source Sans Pro', sans-serif; */
+	/* font-family: 'Oswald', sans-serif; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list-item {
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fp-controlArrow.fp-next {
+	border-left-color: rgba(0, 0, 0, 0.5);
+}
+.fp-controlArrow.fp-prev {
+	/* margin-left: 100px; */
+	border-right-color: rgba(0, 0, 0, 0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (min-width: 1800px) {
+	.fp-controlArrow.fp-next {
+		margin-right: 400px;
+	}
+	.fp-controlArrow.fp-prev {
+		margin-left: 400px;
+	}
+}
+@media (min-width: 1600px) and (max-width: 1700px) {
+	.fp-controlArrow.fp-next {
+		margin-right: 200px;
+	}
+	.fp-controlArrow.fp-prev {
+		margin-left: 200px;
+	}
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+	.fp-controlArrow.fp-next {
+		margin-right: 100px;
+	}
+	.fp-controlArrow.fp-prev {
+		margin-left: 100px;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1500px) {
+	.fp-controlArrow.fp-next {
+		margin-right: 50px;
+	}
+	.fp-controlArrow.fp-prev {
+		margin-left: 50px;
+	}
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+	.fp-controlArrow.fp-next {
+		margin-right: 40px;
+	}
+	.fp-controlArrow.fp-prev {
+		margin-left: 40px;
+	}
 }
 
-.App-link {
-  color: #61dafb;
+.fp-slidesNav.fp-bottom {
+	/* background: blue; */
+}
+.fp-slidesNav ul {
+	margin-bottom: 22vh;
+	margin-top: 0px;
+	text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html,
+body,
+#App {
+	height: 100%;
+	width: 100%;
+	/* position: fixed; */
+}
+
+@media (max-width: 500px) {
+	.findme {
+		display: none;
+	}
 }
